@@ -3,6 +3,11 @@
     /* Add a smooth transition effect for background color change */
 }
 
+.navbar .offcanvas {
+    height: 100vh !important;
+    width: 70% !important;
+}
+
 /* Additional style for the navbar when scrolled */
 .navbar-scrolled {
     background-color: #fff;
@@ -180,7 +185,7 @@ img {
     opacity: 0;
     border-radius: 4px;
     transition: 0.5s;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.6);
     z-index: 2;
 }
 
@@ -217,10 +222,10 @@ img {
     padding: 10px 15px 20px 15px;
 }
 
-.team .member .member-info h4 {
+.team .member .member-info h6 {
     font-weight: 700;
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 18px;
     color: #000;
 }
 
@@ -260,65 +265,27 @@ img {
     color: #000;
 }
 
-.contact .php-email-form {
-    padding: 34px;
-    background: #f4f4f4;
-}
 
-.contact .php-email-form .error-message {
-    display: none;
-    color: #fff;
-    background: #ed3c0d;
-    text-align: left;
-    padding: 15px;
-    margin-bottom: 24px;
-    font-weight: 600;
-}
 
-.contact .php-email-form .sent-message {
-    display: none;
-    color: #fff;
-    background: #18d26e;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 24px;
-    font-weight: 600;
-}
 
-.contact .php-email-form .loading {
-    display: none;
-    background: #fff;
-    text-align: center;
-    padding: 15px;
-    margin-bottom: 24px;
-}
 
-.contact .php-email-form button[type=submit] {
-    background: #ffd700;
-    border: 0;
-    padding: 10px 30px;
-    color: #000;
-    transition: 0.4s;
-    border-radius: 4px;
-}
 
-.contact .php-email-form button[type=submit]:hover {
-    background: #000;
-    color: var(--navy);
-}
 
-@keyframes animate-loading {
-    0% {
-        transform: rotate(0deg);
-    }
+@media (max-width: 767.98px) {
+    .offcanvas img {
+            width: 250px !important;
+            height: 250px !important;
+        }
+    
+        .offcanvas .navbar-nav {
+            margin-top: 100px !important;
+        }
 
-    100% {
-        transform: rotate(360deg);
-    }
-}
-
-footer {
-    background-color: #eaeaea;
+        .offcanvas .nav-item {
+            font-size: 17px;
+            margin-top: 10px;
+            text-align: center;
+        }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -329,7 +296,40 @@ footer {
     .gallery .last {
         height: 120px !important;
     }
+
+    .overlay a {
+        margin-top: 100px !important;
+    }
+
+        .overlay a i {
+            font-size: 100px !important;
+        }
+
+
+
+    .offcanvas img {
+        width: 250px !important;
+        height: 250px !important;
+        margin-left: 140px;
+    }
+
+    .offcanvas .navbar-nav {
+        margin-top: 60px !important;
+    }
+
+    .offcanvas .nav-item {
+        font-size: 30px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .produk .overlay a {
+        margin-top: 150px;
+    }
+
 }
+
+@media (min-width: 992px) and (max-width: 1199px) {}
 
 @media (min-width: 1200px) {
     .gallery .last {
